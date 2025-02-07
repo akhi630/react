@@ -2,6 +2,7 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 import Cart from "./Cart";
+
 // import Makeup from "./Makeup";
 
 

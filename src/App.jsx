@@ -81,7 +81,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import { useDispatch, useSelector } from "react-redux";
 import Login from "./Login";
-import { logout } from "./Store";
+import { logout } from "./store";
 import NotFound from "./NotFound";
 import Milk from "./Milk";
 // import Makeup from "./Makeup";
