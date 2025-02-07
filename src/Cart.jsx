@@ -111,7 +111,7 @@
 
 
 
-import { addPurchaseDetails, clear, clearCart, decrement, increment } from "./Store";
+import { addPurchaseDetails, clear, clearCart, decrement, increment } from "./store";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";

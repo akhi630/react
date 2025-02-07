@@ -98,7 +98,7 @@
 import { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { login } from "./Store";
+import { login } from "./store";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
