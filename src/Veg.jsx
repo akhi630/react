@@ -68,7 +68,7 @@
 
 
 import { useDispatch, useSelector } from "react-redux";
-import { addTocart } from "./Store";
+import { addTocart } from "./store";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 
