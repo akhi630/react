@@ -44,9 +44,9 @@ function Orders() {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center text-primary">Your Purchase History</h2>
+      <h2 className="text-center text-primary fs-1">Your Purchase History</h2>
       {purchaseHistory.length === 0 ? (
-        <p className="text-center text-danger">No purchase history available</p>
+        <p className="text-center text-danger fs-1">No purchase history available</p>
       ) : (
         <div className="row justify-content-center">
           {purchaseHistory.map((purchase, index) => (

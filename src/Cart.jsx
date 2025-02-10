@@ -203,7 +203,7 @@ function Cart() {
               </div>
             )}
 
-            <p className="text-danger fw-bold">Net Amount: &#8377;{finalAmount.toFixed(2)}</p>
+            {/* <p className="text-danger fw-bold">Net Amount: &#8377;{finalAmount.toFixed(2)}</p> */}
 
             {/* Discount Buttons */}
             <div className="mb-3">
@@ -238,6 +238,7 @@ function Cart() {
                 <p className="text-danger">Coupon Discount: &#8377;{couponDiscountAmount.toFixed(2)}</p>
               </div>
             )}
+            <p className="text-danger fw-bold">Net Amount: &#8377;{finalAmount.toFixed(2)}</p>
 
             {/* Complete Purchase Button */}
             <button className="btn btn-primary mt-3" onClick={handleCompletePurchase}>
@@ -246,7 +247,7 @@ function Cart() {
           </div>
         </div>
       ) : (
-        <p className="text-center text-danger fw-bold">Your cart is empty</p>
+        <p className="d-flex  align-items-center min-vh-300 text-center text-danger fw-bold fs-1">********Your cart is empty********</p>
       )}
     </div>
     </div>

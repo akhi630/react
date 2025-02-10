@@ -18,7 +18,10 @@ const productsSlice = createSlice({
         {image:"carrot.jpg",name:"Carrot",price:40.00},
         {image:"beans.jpg",name:"Beans",price:45.00},
         {image:"bitter guard.jpg",name:"Bitter guard",price:36.00},
-        {image:"ladies finger.jpg",name:"Ladies finger",price:43.00}
+        {image:"ladies finger.jpg",name:"Ladies finger",price:43.00},
+        {image:"tomato.jpg",name:"Tomato",price:40.00},
+        {image:"drumsticks.jpg",name:"Drumsticks",price:40.00},
+        {image:"brinjal.jpg",name:"Brinjal",price:40.00},
     ],
 NonVeg:[
         {image:"chiken.jpg",name:"chiken",price:200.00},
@@ -26,16 +29,22 @@ NonVeg:[
         {image:"fish.jpg",name:"fishes",price:193.00},
         {image:"Crab.jpg",name:"Crab",price:345.00},
         {image:"prawns.jpg",name:"Prawns",price:193.00},
-        {image:"egg.jpg",name:"Eggs",price:193.00}
+        {image:"lombchops.jpg",name:"Lomb Chops",price:193.00},
+        {image:"chikenlollypop.jpg",name:"Chiken Lolly Pop",price:90.00},
+        {image:"mutton nihari.jpg",name:"Mutton Nihari",price:193.00},
+        {image:"ghost pepper.jpg",name:"Ghost pepper",price:193.00}
 ],
 
 Milk:[
-    {image:"jersy.jpg",name:"Jersy",price:200.00},
-    {image:"sangham.jpg",name:"Sangham",price:231.00},
-    {image:"heritage.jpg",name:"Heritage",price:193.00},
-    {image:"vishaka.jpg",name:"vishaka",price:345.00},
-    {image:"arokya.jpg",name:"Arokya",price:193.00},
-    {image:"delight.jpg",name:"Country delight",price:193.00}
+    {image:"jersy.jpg",name:"Jersy",price:75.00},
+    {image:"sangham.jpg",name:"Sangham",price:45.00},
+    {image:"heritage.jpg",name:"Heritage",price:65.00},
+    {image:"vishaka.jpg",name:"vishaka",price:34.00},
+    {image:"arokya.jpg",name:"Arokya",price:65.00},
+    {image:"delight.jpg",name:"Country delight",price:33.00},
+    {image:"hatson.jpg",name:"Hatson",price:43.00},
+    {image:"nandini.jpg",name:"Nandini",price:53.00},
+
 ]
 // Makeup:[
 //         {image:"lipstick.jpg",name:"Lipstick",price:200.00},

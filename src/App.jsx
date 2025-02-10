@@ -85,6 +85,8 @@ import { logout } from "./store";
 import NotFound from "./NotFound";
 import Milk from "./Milk";
 // import Makeup from "./Makeup";
+// import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const App = () => {
   const cart = useSelector((state) => state.cart);
@@ -97,9 +99,9 @@ const App = () => {
   return (
     
     <BrowserRouter>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light px-3 fixed-top text-center">&emsp;&emsp;&emsp;&emsp;
+      <nav className="navbar navbar-expand-lg navbar-light bg-light px-3 fixed-top border-4 text-center">&emsp;&emsp;
         
-        <Link to="/home" className="navbar-brand">Home</Link>&emsp;&emsp;&emsp;
+        <Link to="/home" className="navbar-brand text-black"> <img src="home.jpg" height="50px" ></img>Home</Link>&emsp;&emsp;&emsp;
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -110,26 +112,26 @@ const App = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav me-auto">
-            <li className="nav-item"><Link to="/veg" className="nav-link">Veg</Link></li>&emsp;&emsp;&emsp;&emsp;
-            <li className="nav-item"><Link to="/nonveg" className="nav-link">Non-Veg</Link></li>&emsp;&emsp;&emsp;
+            <li className="nav-item"><Link to="/veg" className="nav-link text-black "><img src="veg.gif" height="50px"></img>Veg</Link></li>&emsp;&emsp;&emsp;
+            <li className="nav-item"><Link to="/nonveg" className="nav-link text-black"><img src="chiken.png" height="50px"></img>Non-Veg</Link></li>&emsp;&emsp;
             {/* <li className="nav-item"><Link to="/Makeup" className="nav-link">Makeup</Link></li>&emsp;&emsp;&emsp; */}
-            <li className="nav-item"><Link to="/Milk" className="nav-link ">Milk</Link></li>&emsp;&emsp;&emsp;&emsp;
+            <li className="nav-item"><Link to="/Milk" className="nav-link text-black"><img src="mil.png" height="50px"></img>Milk</Link></li>&emsp;&emsp;&emsp;
             <li className="nav-item">
-              <Link to="/cart" className="nav-link">Cart <span className="badge bg-danger">{totalItems}</span></Link>
-            </li>&emsp;&emsp;&emsp;&emsp;
+              <Link to="/cart" className="nav-link text-black"><img src="aa.gif" height="50px"></img> Cart <span className="badge bg-danger">{totalItems}</span></Link>
+            </li>&emsp;&emsp;&emsp;
            
-            <li className="nav-item"><Link to="/orders" className="nav-link ">Orders</Link></li>&emsp;&emsp;&emsp;&emsp;
-            <li className="nav-item"><Link to="/aboutus" className="nav-link">About Us</Link></li>&emsp;&emsp;&emsp;&emsp;
-            <li className="nav-item"><Link to="/contactus" className="nav-link">Contact Us</Link></li>&emsp;&emsp;&emsp;
+            <li className="nav-item"><Link to="/orders" className="nav-link text-black"><img src="order.png" height="50px"/>Orders</Link></li>&emsp;&emsp;&emsp;
+            <li className="nav-item"><Link to="/aboutus" className="nav-link text-black"><img src="aboutus.jpg" height="50px"/>About Us</Link></li>&emsp;&emsp;&emsp;
+            <li className="nav-item"><Link to="/contactus" className="nav-link text-black"><img src="contactus.png" height="50px"/>Contact Us</Link></li>&emsp;&emsp;&emsp;
           </ul>
           <div className="d-flex">
             {isAuthenticated ? (
               <>
-                <span className="navbar-text me-3">Welcome Akhila!</span>&emsp;&emsp;
+                <span className="navbar-text me-3 text-danger">Welcome Akhila!</span>&emsp;&emsp;
                 <button onClick={() => dispatch(logout())} className="btn btn-danger">Logout</button>
               </>
             ) : (
-              <Link to="/login" className="btn btn-primary">Sign In</Link>
+              <Link to="/login" className="btn btn-primary"><img src="signin.png" height="50px"/>Sign In</Link>
             )}
           </div>
         </div>
